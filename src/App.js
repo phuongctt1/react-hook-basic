@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Nav from './views/Nav';
 
 const App = () => {
   let text = "phuong"; //string
@@ -9,7 +10,7 @@ const App = () => {
   let link = 'https://www.youtube.com/watch?v=MsyZGJ4aoGs&list=PLMbuMydSxMKxfg0OeJJoNsdRTnTIEcqmg'
   return (
     <div className="App">
-      {console.log('check obj: ',obj)}
+    <Nav/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Hello world with react js {text} and  in {number} !!</h1>
