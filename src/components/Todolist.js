@@ -5,7 +5,11 @@ const TodoList = () => {
     return(
         <div>
             <label>Name</label>
-            <input type="text" onChange={(event)=> setName(event.target.value)}/>
+            <input value={name} type = "text"
+            onChange= {(event) => {
+                console.log("check event: ", event)
+                setName(event.target.value)
+                } } />
             <br/><br/>
             Hello study with me {name}
         </div>
