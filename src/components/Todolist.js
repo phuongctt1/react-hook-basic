@@ -28,6 +28,13 @@ const TodoList = () => {
             <button type='button' onClick={ (event) => handleClickButton(event,'buttonClick')}> Submit</button>
             <br/><br/>
             Hello study with me {name}
+            <div>list to do</div>
+            {listTodo.map((item, index)=>{
+                console.log("check item:", item, index)
+                return(
+                    <div>{item.name}</div>
+                )
+            })}
         </div>
     );
 }
